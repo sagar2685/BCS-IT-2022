@@ -1,0 +1,37 @@
+<html>
+<body>
+<script type="text/javascript">
+	function validate()
+	{
+	var name=document.valid.name.value;
+	var pass=document.valid.pwd.value;
+	if(name==null || name=="")
+	{
+		alert("Name can't be blank");
+		return false;
+	}
+	else if(pass.length<6) 
+	{
+	alert("Password must be atleast 6 characters long");
+	return false;
+	}
+
+
+	}
+
+
+
+</script>
+<form name="valid" onsubmit="return validate()">
+Name : <input type="text" name="name"><br />
+Password : <input type="Password" name="pwd"> <br />
+<input type="submit" value="Register">
+</form>
+
+
+</body>
+
+
+
+
+</html>

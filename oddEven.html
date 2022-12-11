@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <script type="text/javascript">
+        function chk() {
+            var n, g;
+            n = parseInt(document.getElementById("no").value);
+
+            if (n % 2 == 0)
+                document.write(n + " is even.");
+
+
+            else
+                document.write(n + " is odd.");
+        }
+
+    </script>
+
+    Enter Number : <input type="text" id="no"><br>
+    <input type="button" value="Find odd or even" onclick="chk()">
+
+</body>
+
+</html>

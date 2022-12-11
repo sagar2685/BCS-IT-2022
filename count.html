@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <script type="text/javascript">
+        function fac() {
+            var n, f;
+            f = 0;
+            n = parseInt(document.getElementById("no").value);
+            while (n > 0) {
+                f = f + 1;
+                n = parseInt(n / 10);
+            }
+            document.write("The count of number is " + f);
+        }
+
+    </script>
+
+    Enter Number : <input type="text" id="no"><br>
+    <input type="button" value="Count is " onclick="fac()">
+
+</body>
+
+</html>

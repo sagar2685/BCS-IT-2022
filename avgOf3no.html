@@ -1,0 +1,28 @@
+<html>
+
+<body>
+
+    <!-- <table border ="1">
+         <tr><td> Enter the 1st no. </td><td><input id="n1" ></td></tr>
+         <tr><td> Enter the 2nd no. </td><td><input id="n2" ></td></tr>
+         <tr><td> Enter the 3rd no. </td><td><input id="n3" ></td></tr>
+         <tr><td><button onclick="avg()">Calculate Average </button></td></tr>   
+         </table> -->
+    Enter 1st Number : <input id="n1"><br />
+    Enter 2nd Number : <input id="n2"> <br />
+    Enter 3rd Number : <input id="n3"> <br />
+    <input type="button" value="Calculate Average" onclick="avg()">
+
+    <script type="text/javascript">
+        function avg() {
+            var a, b, c, av;
+            a = parseInt(document.getElementById("n1").value);
+            b = parseInt(document.getElementById("n2").value);
+            c = parseInt(document.getElementById("n3").value);
+            av = (a + b + c) / 3;
+            document.write("The average is " + av);
+        }
+    </script>
+</body>
+
+</html>

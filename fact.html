@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <script type="text/javascript">
+        function fac() {
+            var n, f;
+            f = 1;
+            n = parseInt(document.getElementById("no").value);
+            for (var i = 1; i <= n; i++) {
+                f = f * i;
+            }
+            document.write("The factorial of number is " + f);
+        }
+
+    </script>
+
+    Enter Number : <input type="text" id="no"><br>
+    <input type="button" value="Find factorial" onclick="fac()">
+
+</body>
+
+</html>
